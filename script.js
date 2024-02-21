@@ -15,7 +15,7 @@ function countVowel(){
         }
         // if(isVowel(char)){
         //     vowelCount++;
-        }
+        // }
     }
 
     var result = document.getElementById("result");
