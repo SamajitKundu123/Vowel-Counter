@@ -7,15 +7,15 @@ function countVowel(){
 
     for(var i=0; i < text.length; i++ ){
         var char = text.charAt(i);
-        if(char == " "){
-            continue;
-        }
-        else{
-            vowelCount++;
-        }
-        // if(isVowel(char)){
+        // if(char == " "){
+        //     continue;
+        // }
+        // else{
         //     vowelCount++;
         // }
+        if(isVowel(char)){
+            vowelCount++;
+        }
     }
 
     var result = document.getElementById("result");
@@ -23,8 +23,8 @@ function countVowel(){
 
 }
 
-// function isVowel(char){
+function isVowel(char){
 
-//     var vowels = ["a","e","i","o","u"];
-//     return vowels.includes(char);
-// }
+    var vowels = ["a","e","i","o","u"];
+    return vowels.includes(char);
+}
